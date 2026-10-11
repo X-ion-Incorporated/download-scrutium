@@ -1,0 +1,20 @@
+# ==============================================================================
+# Cloudflare Pages Routing & Redirect Rules
+# Documentation: https://developers.cloudflare.com/pages/configuration/redirects/
+# ==============================================================================
+
+# Canonical URL Normalization
+/index.html      /               301
+/download        /               301
+/downloads       /               301
+/app             /               301
+
+# Deep-link Shortcuts to Portal Sections
+/mobile          /#downloads     302
+/desktop         /#downloads     302
+/install         /#installation  302
+/faq             /#faq           302
+
+# Fallback 404 Catch-All
+# Unmatched requests are routed to /404.html with an official HTTP 404 status
+/*               /404.html       404

@@ -11,7 +11,7 @@ export default function JsonLd() {
         '@id': `${SITE_CONFIG.domain}/#organization`,
         name: 'X-ion, Inc.',
         url: SITE_CONFIG.webAppUrl,
-        logo: `${SITE_CONFIG.domain}/icon.svg`,
+        logo: `${SITE_CONFIG.domain}/logos/x-ion-logo.png`,
         sameAs: [
           SITE_CONFIG.webAppUrl,
           SITE_CONFIG.docsUrl,

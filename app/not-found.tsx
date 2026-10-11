@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/download-config';
 
@@ -6,9 +7,13 @@ export default function NotFound() {
   return (
     <div className="min-h-screen bg-[#07080b] text-neutral-100 flex items-center justify-center p-6">
       <div className="max-w-md w-full text-center space-y-6">
-        <div className="w-10 h-10 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white font-bold text-sm mx-auto">
-          S
-        </div>
+        <Image
+          src="/logos/x-ion-logo.png"
+          alt="Scrutium"
+          width={40}
+          height={40}
+          className="w-10 h-10 rounded-lg object-contain mx-auto"
+        />
         <div className="space-y-2">
           <h1 className="text-3xl font-medium tracking-tight text-white">404</h1>
           <p className="text-sm text-neutral-400">

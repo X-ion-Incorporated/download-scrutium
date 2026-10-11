@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found · Scrutium</title>
+  <meta name="description" content="The page you requested could not be found on the Scrutium download portal.">
+  <meta name="theme-color" content="#07080b">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #07080b;
+      color: #ededed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #0d0e13;
+      border: 1px solid #262626;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .error-code {
+      font-size: 64px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      line-height: 1;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+    .description {
+      font-size: 14px;
+      color: #a3a3a3;
+      line-height: 1.6;
+      max-width: 380px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 8px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #ffffff;
+      color: #07080b;
+      border: 1px solid #ffffff;
+    }
+    .btn-primary:hover {
+      background: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+    .btn-secondary {
+      background: #0d0e13;
+      color: #d4d4d4;
+      border: 1px solid #262626;
+    }
+    .btn-secondary:hover {
+      background: #17181f;
+      color: #ffffff;
+      border-color: #3a3a3a;
+    }
+    .footer-note {
+      margin-top: 32px;
+      font-size: 11px;
+      color: #737373;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/logos/x-ion-logo.png" alt="Scrutium" class="logo-badge" style="object-fit: contain; padding: 2px;" width="44" height="44">
+    <div class="error-code">404</div>
+    <div class="title">Page Not Found</div>
+    <p class="description">
+      The requested page could not be located on the Scrutium download portal. It may have moved or no longer exists.
+    </p>
+    <div class="actions">
+      <a href="/" class="btn btn-primary">Back to Downloads</a>
+      <a href="https://scrutium.com" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Try on Web ↗</a>
+      <a href="https://documentation.scrutium.com" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Documentation ↗</a>
+    </div>
+    <div class="footer-note">
+      © 2026 X-ion, Inc. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>

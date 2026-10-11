@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowUpRight, Download, Check, Sparkles, Bell } from 'lucide-react';
+import Image from 'next/image';
+import { ArrowUpRight, Download, Check } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/download-config';
 
 export default function Hero() {
@@ -22,8 +23,18 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl space-y-6">
           {/* Release metadata kicker */}
-          <div className="text-xs font-mono text-neutral-400 tracking-wide uppercase">
-            Official Release {SITE_CONFIG.currentReleaseVersion} · Mobile Standalone
+          <div className="flex items-center gap-3">
+            <Image
+              src="/logos/x-ion-logo.png"
+              alt="Scrutium"
+              width={36}
+              height={36}
+              className="w-9 h-9 rounded-lg object-contain border border-neutral-800 bg-[#0d0e13]"
+              priority
+            />
+            <div className="text-xs font-mono text-neutral-400 tracking-wide uppercase">
+              Official Release {SITE_CONFIG.currentReleaseVersion} · Mobile Standalone
+            </div>
           </div>
 
           {/* Confident, restrained headline */}

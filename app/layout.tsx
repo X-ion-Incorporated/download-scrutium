@@ -14,6 +14,16 @@ export const metadata: Metadata = {
     'Scrutium desktop app',
     'Scrutium APK',
   ],
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   alternates: {
     canonical: 'https://downloads.scrutium.com',
   },
@@ -23,14 +33,23 @@ export const metadata: Metadata = {
       'Bring Scrutium AI to your device. Get the app, explore its capabilities, and continue on the web whenever you need to.',
     url: 'https://downloads.scrutium.com',
     siteName: 'Scrutium',
+    images: [
+      {
+        url: '/logos/x-ion-logo.png',
+        width: 1254,
+        height: 1254,
+        alt: 'Scrutium AI Logo',
+      },
+    ],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Scrutium — Official App Downloads',
     description:
       'Official Scrutium AI standalone mobile application.',
+    images: ['/logos/x-ion-logo.png'],
   },
   robots: {
     index: true,
@@ -60,6 +79,10 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth">
       <head>
         <JsonLd />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className="min-h-screen bg-[#07080b] text-neutral-100 antialiased selection:bg-neutral-800 selection:text-white">
         {children}

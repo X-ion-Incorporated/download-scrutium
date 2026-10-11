@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ArrowUpRight, Download } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/download-config';
 
@@ -25,9 +26,14 @@ export default function Navbar() {
             href="/"
             className="flex items-center gap-2.5 text-sm font-semibold tracking-tight text-white hover:text-neutral-200 transition-colors"
           >
-            <span className="w-7 h-7 rounded-md bg-neutral-900 border border-neutral-700/80 flex items-center justify-center text-white font-bold text-xs">
-              S
-            </span>
+            <Image
+              src="/logos/x-ion-logo.png"
+              alt="Scrutium"
+              width={28}
+              height={28}
+              className="w-7 h-7 rounded-md object-contain"
+              priority
+            />
             <span className="text-[15px] font-medium tracking-tight">Scrutium</span>
           </Link>
         </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/download-config';
 
@@ -15,9 +16,13 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-neutral-800/80">
           <div className="space-y-1.5">
             <div className="flex items-center gap-2">
-              <span className="w-5 h-5 rounded bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white font-bold text-[10px]">
-                S
-              </span>
+              <Image
+                src="/logos/x-ion-logo.png"
+                alt="Scrutium"
+                width={20}
+                height={20}
+                className="w-5 h-5 rounded object-contain"
+              />
               <span className="font-medium text-white text-sm">Scrutium</span>
             </div>
             <p className="text-neutral-400 text-xs">
